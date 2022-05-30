@@ -2,10 +2,11 @@ const input = document.querySelector(".url")
 const result = document.querySelector(".clip")
 const shorten = document.querySelector(".search-btn")
 const form = document.querySelector("form")
+const startBtn = document.querySelector(".boost-btn")
 
 form.addEventListener("submit", display)
 result.addEventListener("click", Copy)
-
+startBtn.addEventListener(click, redirect)
 function display(e) {
    e.preventDefault()
    fetch('/new', {
@@ -43,12 +44,6 @@ function Copy(e) {
   navigator.clipboard.writeText(copyText.textContent);
   alert("Copied the text: " + copyText.textContent);
 }
-
-
-
-
-
-
 
 
 
