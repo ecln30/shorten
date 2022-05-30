@@ -299,6 +299,10 @@ search-btn:active {
     color: white;
 }
 
+.boost-btn a:active {
+    color: hsl(260, 8%, 14%);
+}
+
 footer {
     width: 100%;
     height: 400px;
